@@ -9,29 +9,81 @@
       text-align: center;
       padding: 20px;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-      border: 2px solid #444;
-      margin-bottom: 20px;
+    h1 {
+      color: #2c3e50;
+    }
+    .stage-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .stage {
+      background: #ecf0f1;
+      border: 2px solid #3498db;
+      border-radius: 12px;
+      width: 200px;
+      padding: 15px;
+      margin: 10px;
+      transition: transform 0.2s;
+    }
+    .stage:hover {
+      transform: scale(1.05);
+      background: #d6eaf8;
+    }
+    .stage h2 {
+      color: #2980b9;
+      margin-bottom: 10px;
+    }
+    .arrow {
+      font-size: 30px;
+      margin: 0 10px;
+      color: #2c3e50;
     }
   </style>
 </head>
 <body>
-  <h1>DevOps Lifecycle</h1>
-  <p>This diagram visually explains each stage in the DevOps lifecycle.</p>
-  <img src="file:///C:/Users/DELL/Downloads/Dailymotiv.drawio.png" alt="DevOps Lifecycle Diagram">
 
-  <h2>Stages Explained</h2>
-  <ul style="text-align: left; display: inline-block;">
-    <li><strong>Plan:</strong> Define goals and gather requirements.</li>
-    <li><strong>Develop:</strong> Write and manage code.</li>
-    <li><strong>Build:</strong> Compile code and create build artifacts.</li>
-    <li><strong>Test:</strong> Run automated/manual tests.</li>
-    <li><strong>Release:</strong> Prepare for deployment.</li>
-    <li><strong>Deploy:</strong> Move application to production.</li>
-    <li><strong>Operate:</strong> Monitor application performance.</li>
-    <li><strong>Monitor:</strong> Collect feedback for improvement.</li>
-  </ul>
+  <h1>DevOps Lifecycle</h1>
+
+  <div class="stage-container">
+    <div class="stage">
+      <h2>Plan</h2>
+      <p>Define project scope and requirements clearly.</p>
+    </div>
+    <div class="stage">
+      <h2>Develop</h2>
+      <p>Write and manage the code collaboratively.</p>
+    </div>
+    <div class="stage">
+      <h2>Build</h2>
+      <p>Compile code and generate deployable packages.</p>
+    </div>
+    <div class="stage">
+      <h2>Test</h2>
+      <p>Test the application for bugs and functionality.</p>
+    </div>
+    <div class="stage">
+      <h2>Release</h2>
+      <p>Approve and prepare for deployment.</p>
+    </div>
+    <div class="stage">
+      <h2>Deploy</h2>
+      <p>Launch the application into production.</p>
+    </div>
+    <div class="stage">
+      <h2>Operate</h2>
+      <p>Ensure the system runs smoothly and efficiently.</p>
+    </div>
+    <div class="stage">
+      <h2>Monitor</h2>
+      <p>Track system performance and feedback.</p>
+    </div>
+  </div>
+
+  <p style="margin-top:40px;"><strong>Visual Representation:</strong></p>
+  <img src="devops-lifecycle-diagram.png" alt="DevOps Lifecycle Diagram" width="700">
+  <!-- Replace this with your diagram image from diagrams.net -->
+
 </body>
 </html>
